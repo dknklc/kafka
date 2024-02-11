@@ -1,3 +1,1 @@
-# Kafka
-
-Kafka demo application
+![](images/kafka-eng.png)
