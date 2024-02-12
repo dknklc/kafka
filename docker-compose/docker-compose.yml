@@ -1,6 +1,20 @@
 version: "3.1"
 
 services:
+  mysql-db:
+    image: mysql
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+  couchbase-db:
+    image: couchbase/server:community-aarch64
+    ports:
+      - 8091:8091
+      - 8092:8092
+      - 8093:8093
+      - 11210:11210
+
   zookeeper:
     image: "docker.io/bitnami/zookeeper:3"
     ports:
